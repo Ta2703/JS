@@ -83,6 +83,7 @@
  28. Создать переменную “age_3” и присвоить ей значение 60
 ```let age_3 = 60;```
 
+
  29. Создать if в котором будите проверять значение переменной age_1
  30. Если age_1 < age_2, вывести в консоль “You don’t have access cause your age is ” + age_1 + “ It’s less then ”
  31. Если age_1 >=  age_2 и age_1 <  age_3, вывести в консоль “Welcome  !”
@@ -90,6 +91,7 @@
  33. Иначе выводите “Technical work”.
 
 ```
+
 if (age_1 < age_2) {
     console.log("You don’t have access cause your age is " + age_1 + " It’s less then ")
 }
@@ -102,6 +104,7 @@ else if (age_1 > age_3) {
 else {
     console.log("Technical work");
 }
+
 ```
 
 # *.HW_1*
@@ -113,7 +116,7 @@ else {
 Ваши преобразования  
 }  
 Вывести в консоль результат работы функции с возрастами 17, 18, 61  
-  
+```  
 const checkAge = function (age) {
     let age_2 = 18
     let age_3 = 60
@@ -134,10 +137,12 @@ const checkAge = function (age) {
 checkAge(17)
 checkAge(18)
 checkAge(61)
+```
 
 2*:  
 Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.  
 
+```
  const checkAge = function (age) {
     if (typeof (age) != "number") {
         console.log("Error")
@@ -163,9 +168,14 @@ checkAge(17)
 checkAge(18)
 checkAge(61)
 // checkAge('name')
+```
+
 
 3**:  
 Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number  
+
+
+```
 const checkAge = function (age) {
     let age_1 = Number(age)
     if (isNaN(age)) {
@@ -193,6 +203,8 @@ checkAge(18)
 checkAge(61)
 checkAge('2')
 checkAge('hello')
+```
+
 
 4***:  
 Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
